@@ -34,6 +34,10 @@ for green example float storage
 | 3 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 |
 | 4 | 0.0 | 0.0 | 0.0 | 1.1 | 0.0 |
 
+### now the questions are...
+-  how to detect T, L square matches?
+-  how to highlight a possible move?
+
 for template example float storage 
 |r c|  0  |  1  |  2  |  3  |  4  |
 |---|-----|-----|-----|-----|-----|
