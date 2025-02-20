@@ -9,6 +9,42 @@ example board
 | 3 | Y | Y | R | B | R |
 | 4 | B | R | B | G | B |
 
+## or instead of Bitmask approach let's go with 2D array with floating point storage...
+
+1 for vertical, .1 for horizontal
+- the existing color is 1.1
+- for each vertical same consecutive color +1
+- for each horizontal same consecutive color +.1
+
+for blue example float storage 
+|r c|  0  |  1  |  2  |  3  |  4  |
+|---|-----|-----|-----|-----|-----|
+| 0 | 1.1 | 0.0 | 0.0 | 1.2 | 1.1 |
+| 1 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 |
+| 2 | 0.0 | 0.0 | 1.1 | 0.0 | 0.0 |
+| 3 | 0.0 | 0.0 | 0.0 | 1.1 | 0.0 |
+| 4 | 1.1 | 0.0 | 1.1 | 0.0 | 1.1 |
+
+for green example float storage 
+|r c|  0  |  1  |  2  |  3  |  4  |
+|---|-----|-----|-----|-----|-----|
+| 0 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 |
+| 1 | 0.0 | 0.0 | 1.2 | 1.1 | 0.0 |
+| 2 | 1.2 | 1.1 | 0.0 | 0.0 | 0.0 |
+| 3 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 |
+| 4 | 0.0 | 0.0 | 0.0 | 1.1 | 0.0 |
+
+for template example float storage 
+|r c|  0  |  1  |  2  |  3  |  4  |
+|---|-----|-----|-----|-----|-----|
+| 0 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 |
+| 1 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 |
+| 2 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 |
+| 3 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 |
+| 4 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 |
+
+## Bitmask approach
+
 Example Board Bitmask:
 |r c| 0    | 1    | 2    | 3    | 4    |
 |---|------|------|------|------|------|
