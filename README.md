@@ -16,6 +16,11 @@ example board
 - for each vertical same consecutive color +1
 - for each horizontal same consecutive color +.1
 
+Or instead of floats we can also go with int...
+- at first it seemed that 2 digits may not be enough..
+- however there should be a case where 9+ horizontal hit, regardless of the grid size...
+  - well I definitely hope so lol
+
 for blue example float storage 
 |r c|  0  |  1  |  2  |  3  |  4  |
 |---|-----|-----|-----|-----|-----|
