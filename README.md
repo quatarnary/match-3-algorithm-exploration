@@ -18,6 +18,12 @@ Example Board Bitmask:
 | 3 | 0100 | 0100 | 0010 | 0001 | 0010 |
 | 4 | 0001 | 0010 | 0001 | 1000 | 0001 |
 
+```
+int wholeGrid = 0b 0001 0010 0100 0001 0001 0100 0010 1000 1000 0010 1000 1000 0001 0010 0100 0100 0100 0010 0001 0010 0001 0010 0001 1000 0001
+```
+
+I know this is not how it should look but gotta start from somewhere
+
 Example Match Patterns:
 
 horizontal 3:
