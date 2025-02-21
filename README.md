@@ -47,6 +47,17 @@ for green example float storage
 But there are issues with both approaches.. Like if I go with bitwise and let's say I want to look at 'T' shape match, I would need the all possible 3x3 subset of 5x5 grid...
 I mean yeah it could be optimized with something like "only check the most matched subsets" however will be faster than just brute forcing?
 
+Or maybe just maybe instead of trying to find all of the possible matches we can just find "not matches" and destroy everything else...
+- that also explains why in match-3 games when the square match happens in the following case, game destroys 5 gems...
+
+|r c| 0 | 1 | 2 |
+|---|---|---|---|
+| 0 | 🔷 | 🔷 | X |
+| 1 | 🔷 | 🔷 | X |
+| 2 | X | 🔷 | X |
+
+
+
 ~~_Please let me do backend 🙏 I don't like the Quake III's "evil flaoting point bit hack".. because I totally agree with the next comment of that code..._~~
 
 for template example float storage 
